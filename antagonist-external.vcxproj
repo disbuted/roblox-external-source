@@ -1,0 +1,344 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>16.0</VCProjectVersion>
+    <Keyword>Win32Proj</Keyword>
+    <ProjectGuid>{5d32816a-b987-45ce-9f20-ddae6ee9b272}</ProjectGuid>
+    <RootNamespace>antagonistexternal</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+    <ProjectName>fent</ProjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <IncludePath>C:\Users\PC\Downloads\azea\azea\include;C:\Users\ideal\Downloads\zzz\include;$(IncludePath);$(ProjectDir)include</IncludePath>
+    <LibraryPath>C:\Users\PC\Downloads\azea\azea\libraries;C:\Users\ideal\Downloads\zzz\libraries;$(LibraryPath);$(ProjectDir)libraries</LibraryPath>
+    <LinkIncremental>false</LinkIncremental>
+    <OutDir>.\output\build</OutDir>
+    <IntDir>.\output\intermediates</IntDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <UACExecutionLevel>RequireAdministrator</UACExecutionLevel>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <LanguageStandard>stdcpplatest</LanguageStandard>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>NDEBUG;_CONSOLE;_CRT_SECURE_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <LanguageStandard>stdcpplatest</LanguageStandard>
+      <AdditionalIncludeDirectories>$(ProjectDir)include/lua;C:\Users\Admin\Desktop\silence\include</AdditionalIncludeDirectories>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>C:\Program Files %28x86%29\Microsoft DirectX SDK %28June 2010%29\Lib\x64;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>ws2_32.lib;Normaliz.lib;Crypt32.lib;Wldap32.lib;libcurl.lib;library_x64.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <UACExecutionLevel>RequireAdministrator</UACExecutionLevel>
+      <EnableUAC>true</EnableUAC>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="lua_env\LuaVM.cpp" />
+    <ClCompile Include="lua_env\lua\lapi.c" />
+    <ClCompile Include="lua_env\lua\lauxlib.c" />
+    <ClCompile Include="lua_env\lua\lbaselib.c" />
+    <ClCompile Include="lua_env\lua\lcode.c" />
+    <ClCompile Include="lua_env\lua\lcorolib.c" />
+    <ClCompile Include="lua_env\lua\lctype.c" />
+    <ClCompile Include="lua_env\lua\ldblib.c" />
+    <ClCompile Include="lua_env\lua\ldebug.c" />
+    <ClCompile Include="lua_env\lua\ldo.c" />
+    <ClCompile Include="lua_env\lua\ldump.c" />
+    <ClCompile Include="lua_env\lua\lfunc.c" />
+    <ClCompile Include="lua_env\lua\lgc.c" />
+    <ClCompile Include="lua_env\lua\linit.c" />
+    <ClCompile Include="lua_env\lua\liolib.c" />
+    <ClCompile Include="lua_env\lua\llex.c" />
+    <ClCompile Include="lua_env\lua\lmathlib.c" />
+    <ClCompile Include="lua_env\lua\lmem.c" />
+    <ClCompile Include="lua_env\lua\loadlib.c" />
+    <ClCompile Include="lua_env\lua\lobject.c" />
+    <ClCompile Include="lua_env\lua\lopcodes.c" />
+    <ClCompile Include="lua_env\lua\loslib.c" />
+    <ClCompile Include="lua_env\lua\lparser.c" />
+    <ClCompile Include="lua_env\lua\lstate.c" />
+    <ClCompile Include="lua_env\lua\lstring.c" />
+    <ClCompile Include="lua_env\lua\lstrlib.c" />
+    <ClCompile Include="lua_env\lua\ltable.c" />
+    <ClCompile Include="lua_env\lua\ltablib.c" />
+    <ClCompile Include="lua_env\lua\ltm.c" />
+    <ClCompile Include="lua_env\lua\lundump.c" />
+    <ClCompile Include="lua_env\lua\lutf8lib.c" />
+    <ClCompile Include="lua_env\lua\lvm.c" />
+    <ClCompile Include="lua_env\lua\lzio.c" />
+    <ClCompile Include="lua_env\lua_overlay.cpp" />
+    <ClCompile Include="main.cpp" />
+    <ClCompile Include="mapper\drv_image\drv_image.cpp" />
+    <ClCompile Include="mapper\kernel_ctx\kernel_ctx.cpp" />
+    <ClCompile Include="protection\protect\anti_attach.cpp" />
+    <ClCompile Include="protection\protect\anti_debugger.cpp" />
+    <ClCompile Include="protection\protect\anti_dump.cpp" />
+    <ClCompile Include="protection\protect\integrity_check.cpp" />
+    <ClCompile Include="protection\protect\kill_process.cpp" />
+    <ClCompile Include="protection\protect\nodeserver\node_protect.cpp" />
+    <ClCompile Include="protection\protect\protectmain.cpp" />
+    <ClCompile Include="protection\protect\selfcode\filler.cpp" />
+    <ClCompile Include="protection\protect\selfcode\ntapi.cpp" />
+    <ClCompile Include="protection\protect\selfcode\pe_header.cpp" />
+    <ClCompile Include="protection\protect\selfcode\remap.cpp" />
+    <ClCompile Include="protection\protect\selfcode\selfcode.cpp" />
+    <ClCompile Include="roblox\aimbot\aimbot.cpp" />
+    <ClCompile Include="roblox\classes\classes.cpp" />
+    <ClCompile Include="roblox\esp\esp.cpp" />
+    <ClCompile Include="roblox\globals\globals.cpp" />
+    <ClCompile Include="utils\configs\configs.cpp" />
+    <ClCompile Include="utils\datamodel\datamodel.cpp" />
+    <ClCompile Include="utils\logs\logs.cpp" />
+    <ClCompile Include="utils\overlay\imgui\imgui.cpp" />
+    <ClCompile Include="utils\overlay\imgui\imgui_demo.cpp" />
+    <ClCompile Include="utils\overlay\imgui\imgui_draw.cpp" />
+    <ClCompile Include="utils\overlay\imgui\imgui_impl_dx11.cpp" />
+    <ClCompile Include="utils\overlay\imgui\imgui_impl_win32.cpp" />
+    <ClCompile Include="utils\overlay\imgui\imgui_tables.cpp" />
+    <ClCompile Include="utils\overlay\imgui\imgui_toggle.cpp" />
+    <ClCompile Include="utils\overlay\imgui\imgui_toggle_palette.cpp" />
+    <ClCompile Include="utils\overlay\imgui\imgui_toggle_presets.cpp" />
+    <ClCompile Include="utils\overlay\imgui\imgui_toggle_renderer.cpp" />
+    <ClCompile Include="utils\overlay\imgui\imgui_widgets.cpp" />
+    <ClCompile Include="utils\overlay\imgui\TextEditor.cpp" />
+    <ClCompile Include="utils\overlay\overlay.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="include\curl\curl.h" />
+    <ClInclude Include="include\curl\curlver.h" />
+    <ClInclude Include="include\curl\easy.h" />
+    <ClInclude Include="include\curl\header.h" />
+    <ClInclude Include="include\curl\mprintf.h" />
+    <ClInclude Include="include\curl\multi.h" />
+    <ClInclude Include="include\curl\options.h" />
+    <ClInclude Include="include\curl\stdcheaders.h" />
+    <ClInclude Include="include\curl\system.h" />
+    <ClInclude Include="include\curl\typecheck-gcc.h" />
+    <ClInclude Include="include\curl\urlapi.h" />
+    <ClInclude Include="include\curl\websockets.h" />
+    <ClInclude Include="include\lua\lapi.h" />
+    <ClInclude Include="include\lua\lauxlib.h" />
+    <ClInclude Include="include\lua\lcode.h" />
+    <ClInclude Include="include\lua\lctype.h" />
+    <ClInclude Include="include\lua\ldebug.h" />
+    <ClInclude Include="include\lua\ldo.h" />
+    <ClInclude Include="include\lua\lfunc.h" />
+    <ClInclude Include="include\lua\lgc.h" />
+    <ClInclude Include="include\lua\ljumptab.h" />
+    <ClInclude Include="include\lua\llex.h" />
+    <ClInclude Include="include\lua\llimits.h" />
+    <ClInclude Include="include\lua\lmem.h" />
+    <ClInclude Include="include\lua\lobject.h" />
+    <ClInclude Include="include\lua\lopcodes.h" />
+    <ClInclude Include="include\lua\lopnames.h" />
+    <ClInclude Include="include\lua\lparser.h" />
+    <ClInclude Include="include\lua\lprefix.h" />
+    <ClInclude Include="include\lua\lstate.h" />
+    <ClInclude Include="include\lua\lstring.h" />
+    <ClInclude Include="include\lua\ltable.h" />
+    <ClInclude Include="include\lua\ltm.h" />
+    <ClInclude Include="include\lua\lua.h" />
+    <ClInclude Include="include\lua\lua.hpp" />
+    <ClInclude Include="include\lua\luaconf.h" />
+    <ClInclude Include="include\lua\lualib.h" />
+    <ClInclude Include="include\lua\lundump.h" />
+    <ClInclude Include="include\lua\lvm.h" />
+    <ClInclude Include="include\lua\lzio.h" />
+    <ClInclude Include="include\sol\config.hpp" />
+    <ClInclude Include="include\sol\forward.hpp" />
+    <ClInclude Include="include\sol\sol.hpp" />
+    <ClInclude Include="keyauth\auth.hpp" />
+    <ClInclude Include="keyauth\json.hpp" />
+    <ClInclude Include="keyauth\skStr.h" />
+    <ClInclude Include="keyauth\utils.hpp" />
+    <ClInclude Include="lua_env\LuaVM.hpp" />
+    <ClInclude Include="lua_env\lua_overlay.hpp" />
+    <ClInclude Include="mapper\driver_data.hpp" />
+    <ClInclude Include="mapper\drv_image\drv_image.h" />
+    <ClInclude Include="mapper\kernel_ctx\kernel_ctx.h" />
+    <ClInclude Include="mapper\loadup.hpp" />
+    <ClInclude Include="mapper\physmeme.hpp" />
+    <ClInclude Include="mapper\physmeme\physmeme.hpp" />
+    <ClInclude Include="mapper\raw_driver.hpp" />
+    <ClInclude Include="mapper\util\hook.hpp" />
+    <ClInclude Include="mapper\util\nt.hpp" />
+    <ClInclude Include="mapper\util\util.hpp" />
+    <ClInclude Include="protection\encryption\includes.h" />
+    <ClInclude Include="protection\encryption\lazy.h" />
+    <ClInclude Include="protection\encryption\obstcate.h" />
+    <ClInclude Include="protection\encryption\process.hpp" />
+    <ClInclude Include="protection\encryption\xor.h" />
+    <ClInclude Include="protection\protect\anti_attach.h" />
+    <ClInclude Include="protection\protect\anti_debugger.h" />
+    <ClInclude Include="protection\protect\anti_dump.h" />
+    <ClInclude Include="protection\protect\integrity_check.h" />
+    <ClInclude Include="protection\protect\kill_process.h" />
+    <ClInclude Include="protection\protect\nodeserver\node_protect.h" />
+    <ClInclude Include="protection\protect\protectmain.h" />
+    <ClInclude Include="protection\protect\selfcode\filler.h" />
+    <ClInclude Include="protection\protect\selfcode\ntapi.h" />
+    <ClInclude Include="protection\protect\selfcode\pe_header.h" />
+    <ClInclude Include="protection\protect\selfcode\remap.h" />
+    <ClInclude Include="protection\protect\selfcode\selfcode.h" />
+    <ClInclude Include="resource.h" />
+    <ClInclude Include="roblox\aimbot\aimbot.hpp" />
+    <ClInclude Include="roblox\classes\classes.hpp" />
+    <ClInclude Include="roblox\driver\driver_impl.hpp" />
+    <ClInclude Include="roblox\esp\esp.hpp" />
+    <ClInclude Include="roblox\globals\globals.hpp" />
+    <ClInclude Include="utils\configs\configs.hpp" />
+    <ClInclude Include="utils\datamodel\datamodel.hpp" />
+    <ClInclude Include="utils\json\json.hpp" />
+    <ClInclude Include="utils\logs\logs.hpp" />
+    <ClInclude Include="utils\overlay\ckeybind\keybind.hpp" />
+    <ClInclude Include="utils\overlay\imgui\imconfig.h" />
+    <ClInclude Include="utils\overlay\imgui\imgui.h" />
+    <ClInclude Include="utils\overlay\imgui\imgui_impl_dx11.h" />
+    <ClInclude Include="utils\overlay\imgui\imgui_impl_win32.h" />
+    <ClInclude Include="utils\overlay\imgui\imgui_internal.h" />
+    <ClInclude Include="utils\overlay\imgui\imgui_offset_rect.h" />
+    <ClInclude Include="utils\overlay\imgui\imgui_toggle.h" />
+    <ClInclude Include="utils\overlay\imgui\imgui_toggle_math.h" />
+    <ClInclude Include="utils\overlay\imgui\imgui_toggle_palette.h" />
+    <ClInclude Include="utils\overlay\imgui\imgui_toggle_presets.h" />
+    <ClInclude Include="utils\overlay\imgui\imgui_toggle_renderer.h" />
+    <ClInclude Include="utils\overlay\imgui\imstb_rectpack.h" />
+    <ClInclude Include="utils\overlay\imgui\imstb_textedit.h" />
+    <ClInclude Include="utils\overlay\imgui\imstb_truetype.h" />
+    <ClInclude Include="utils\overlay\keyauth\json.hpp" />
+    <ClInclude Include="utils\overlay\keyauth\utils.hpp" />
+    <ClInclude Include="utils\overlay\overlay.hpp" />
+    <ClInclude Include="utils\skcrypt\skStr.hpp" />
+    <ClInclude Include="utils\xorstr\xorstr.hpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <Library Include="libraries\libcurl.lib" />
+    <Library Include="libraries\library_x64.lib" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="fent.aps" />
+    <None Include="include\curl\Makefile.am" />
+    <None Include="include\curl\Makefile.in" />
+    <None Include="silence.json" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="fent.rc" />
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="..\..\Downloads\MDA-fentanyl_structure.ico" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
