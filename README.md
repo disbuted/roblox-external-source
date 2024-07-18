@@ -8,5 +8,6 @@
 - Fixed the old key -> json code as it was a little broken. The .json file saves into your LOCAL APPDATA  directory. The filename and the name of the .json can be changed to your liking. This isnt hard so dont worry!!
 # Others
 - Update the offsets every roblox update, This is kinda needed for the cheat to run. I will not be providing a method / way of obtaining these offsets but there are methods out there if you look well enough or you know or have a basic understanding of reverse engineering. Id suggest looking for other methods of obtaining offsets for different games and replicating such method in this case with the appropriate actions.
+- Fix the protection methods as well as these are dogshit and do NOT work!! You can simply write your own ANTI-VM Code, Antidump, Encryption or Int check code pretty easily if you know how.
 # Others
 - Credits to the original owners of ATG and SILENCE for the base code.
